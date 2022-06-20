@@ -4,15 +4,22 @@ import Post from './Post/Post';
 
 
 const MyPosts = ({ posts }) => {
+  const newPostElement = React.createRef();
+
+  const addPost = () => {
+
+    const text = newPostElement.current.value;
+    //addPost(text);
+  }
 
   return (
     <div className={s.postsBlock}>
       <h3>My posts</h3>
       <div>
         <div>
-          <textarea></textarea>
+          <textarea ref={newPostElement}></textarea>
         </div>
-        <div>
+        <div onClick={addPost}>
           <button>Add post</button>
         </div>
       </div>
