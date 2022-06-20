@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavLink to='/sattings' style={({ isActive }) => getActiveLink(isActive)}>Sattings</NavLink>
       </div>
       <div>
-        <NavLink to='/frends' style={({ isActive }) => getActiveLink(isActive)}>Frends</NavLink>
+        <NavLink to='/frends' style={({ isActive }) => getActiveLink(isActive)}>Friends</NavLink>
       </div>
     </nav>
   )
